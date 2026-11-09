@@ -1,0 +1,59 @@
+{
+  "name": "Hannah Grace Humphreys",
+  "role": {
+    "en": "PhD Student, Department of Linguistics",
+    "fr": "Doctorante, Département de linguistique"
+  },
+  "affiliation": {
+    "en": "University of Hawaiʻi at Mānoa",
+    "fr": "Université d’Hawaiʻi à Mānoa"
+  },
+  "photo": "assets/hg-headshot.png",
+  "interests": [
+    { "en": "Linguistic anthropology", "fr": "Anthropologie linguistique" },
+    { "en": "Idioms", "fr": "Expressions idiomatiques" },
+    { "en": "Polynesian languages", "fr": "Langues polynésiennes" },
+    { "en": "Marquesan", "fr": "Marquisien" }
+  ],
+  "about": {
+    "en": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+    "fr": ""
+  },
+  "research": [
+    {
+      "title": { "en": "Marquesan fieldwork", "fr": "Terrain sur le marquisien" },
+      "details": {
+        "en": "Nuku Hiva, Marquesas Islands · with the Académie marquisienne",
+        "fr": "Nuku Hiva, îles Marquises · avec l’Académie marquisienne"
+      },
+      "description": {
+        "en": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>",
+        "fr": ""
+      }
+    }
+  ],
+  "publications": [
+    { "citation": "<p>Humphreys, Hannah Grace. 2026. Lorem ipsum dolor sit amet. <em>Journal Title</em> 00(0). 000–000.</p>" }
+  ],
+  "presentations": [
+    { "citation": "<p>Humphreys, Hannah Grace. 2026. Lorem ipsum dolor sit amet. Paper presented at the Conference Name, City.</p>" },
+    { "citation": "<p>Humphreys, Hannah Grace. 2025. Consectetur adipiscing elit. Poster presented at the Conference Name, City.</p>" }
+  ],
+  "teaching": [
+    {
+      "course": { "en": "LING 000: Lorem ipsum", "fr": "" },
+      "role": { "en": "Teaching assistant", "fr": "Assistante d’enseignement" },
+      "term": { "en": "Fall 2026", "fr": "Automne 2026" }
+    },
+    {
+      "course": { "en": "LING 000: Dolor sit amet", "fr": "" },
+      "role": { "en": "Instructor of record", "fr": "Chargée de cours" },
+      "term": { "en": "Spring 2026", "fr": "Printemps 2026" }
+    }
+  ],
+  "email": "hannah.humphreys@hawaii.edu",
+  "google_scholar": "",
+  "orcid": "",
+  "academia": "",
+  "cv": "assets/hannahgrace-humphreys-cv.pdf"
+}

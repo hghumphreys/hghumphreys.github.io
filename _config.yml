@@ -1,0 +1,9 @@
+# GitHub Pages runs Jekyll on every push. This site has no templates. Jekyll only copies the
+# files as they are, and this list keeps design/working files off the public site.
+exclude:
+  - mockups
+  - screenshots
+  - README.md
+  - 05Edwards2018topdown.pdf
+  - .claude
+  - .pages.yml

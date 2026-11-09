@@ -1,0 +1,158 @@
+# Pages CMS configuration (https://pagescms.org/docs/configuration/).
+# Hannah edits everything through app.pagescms.org; it saves to data/content.json.
+# Bilingual fields are objects with an English and a French box. French can be left
+# empty, and the English text is then shown in French mode too.
+
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: content
+    label: Website content
+    type: file
+    path: data/content.json
+    format: json
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+
+      - name: role
+        label: Position
+        type: object
+        fields:
+          - { name: en, label: English, type: string }
+          - { name: fr, label: French, type: string }
+
+      - name: affiliation
+        label: University
+        type: object
+        fields:
+          - { name: en, label: English, type: string }
+          - { name: fr, label: French, type: string }
+
+      - name: photo
+        label: Photo
+        description: Your headshot. A square or portrait photo works best.
+        type: image
+
+      - name: interests
+        label: Research interests
+        description: The coloured tags under your name.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{en}"
+        fields:
+          - { name: en, label: English, type: string }
+          - { name: fr, label: French, type: string }
+
+      - name: about
+        label: About me
+        type: object
+        fields:
+          - { name: en, label: English, type: rich-text, options: { format: html } }
+          - { name: fr, label: French, type: rich-text, options: { format: html } }
+
+      - name: research
+        label: Research projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title.en}"
+        fields:
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: fr, label: French, type: string }
+          - name: details
+            label: Place / collaborators (small grey line)
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: fr, label: French, type: string }
+          - name: description
+            label: Description
+            type: object
+            fields:
+              - { name: en, label: English, type: rich-text, options: { format: html } }
+              - { name: fr, label: French, type: rich-text, options: { format: html } }
+
+      - name: publications
+        label: Publications
+        description: Newest first. Use italics for journal and book titles.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{citation}"
+        fields:
+          - { name: citation, label: Citation, type: rich-text, options: { format: html } }
+
+      - name: presentations
+        label: Presentations (talks and posters)
+        description: Newest first.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{citation}"
+        fields:
+          - { name: citation, label: Citation, type: rich-text, options: { format: html } }
+
+      - name: teaching
+        label: Teaching
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{course.en}"
+        fields:
+          - name: course
+            label: Course (e.g. LING 102 Introduction to the Study of Language)
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: fr, label: French, type: string }
+          - name: role
+            label: Your role (e.g. Teaching assistant)
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: fr, label: French, type: string }
+          - name: term
+            label: Semester (e.g. Fall 2026)
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: fr, label: French, type: string }
+
+      - name: email
+        label: Email
+        type: string
+
+      - name: google_scholar
+        label: Google Scholar link
+        description: Full web address. Leave empty to hide.
+        type: string
+
+      - name: orcid
+        label: ORCID link
+        description: Full web address, e.g. https://orcid.org/0000-0000-0000-0000. Leave empty to hide.
+        type: string
+
+      - name: academia
+        label: Academia.edu link
+        description: Full web address. Leave empty to hide.
+        type: string
+
+      - name: cv
+        label: CV (PDF)
+        description: Upload a new PDF here to replace your CV.
+        type: file

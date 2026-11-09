@@ -1,0 +1,10 @@
+# Mac / editor clutter
+.DS_Store
+.claude/
+
+# Not part of the site
+05Edwards2018topdown.pdf
+
+# Design history: kept locally, not published to the (public) repo
+mockups/
+screenshots/

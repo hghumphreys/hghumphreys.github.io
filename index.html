@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hannah Grace Humphreys · Linguistics, University of Hawaiʻi at Mānoa</title>
+<meta name="description" content="Hannah Grace Humphreys is a PhD student in the Department of Linguistics at the University of Hawaiʻi at Mānoa, working on linguistic anthropology, idioms and Polynesian languages, especially Marquesan.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hannah Grace Humphreys">
+<meta property="og:description" content="PhD student in linguistics at the University of Hawaiʻi at Mānoa: linguistic anthropology, idioms, Polynesian languages and Marquesan.">
+<meta property="og:image" content="https://hghumphreys.github.io/assets/hg-headshot.png">
+<meta property="og:url" content="https://hghumphreys.github.io/">
+<link rel="canonical" href="https://hghumphreys.github.io/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<!--
+  This page is a template. All of Hannah's content (bio, research, publications, teaching, links,
+  CV) lives in data/content.json and is filled in by assets/js/site.js. Edit content there
+  (in VS Code or through Pages CMS), not here. Section headings and menu labels below are fixed text.
+-->
+<body data-lang="en">
+<header class="site">
+  <div class="wrap">
+    <a class="mark" href="#"><span data-fill="name">Hannah Grace Humphreys</span><span class="dot">.</span></a>
+    <div class="nav-right">
+      <nav>
+        <a href="#about"><span lang="en">About</span><span lang="fr">À propos</span></a>
+        <a href="#research" data-nav="research"><span lang="en">Research</span><span lang="fr">Recherche</span></a>
+        <a href="#publications" data-nav="publications"><span lang="en">Publications</span><span lang="fr">Publications</span></a>
+        <a href="#teaching" data-nav="teaching"><span lang="en">Teaching</span><span lang="fr">Enseignement</span></a>
+        <a href="#cv">CV</a>
+      </nav>
+      <button id="lang-toggle" data-current="en" aria-label="Switch to French">
+        <span class="lang-option lang-option-en">EN</span> / <span class="lang-option lang-option-fr">FR</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1 id="hero-name">Hannah Grace <em>Humphreys</em></h1>
+      <p class="role" id="role">PhD Student, Department of Linguistics<br>University of Hawaiʻi at Mānoa</p>
+      <div class="tags" id="interests"></div>
+    </div>
+    <img id="photo" src="assets/hg-headshot.png" alt="Hannah Grace Humphreys">
+  </div>
+</section>
+
+<noscript><p class="notice">This site needs JavaScript turned on to show its content. Email: hannah.humphreys@hawaii.edu</p></noscript>
+
+<div class="wave"></div>
+
+<section class="band" id="about" style="--accent:var(--rose)">
+  <div class="wrap">
+    <h2><span lang="en">About</span><span lang="fr">À propos</span></h2>
+    <div class="rich" id="about-text"></div>
+  </div>
+</section>
+
+<section class="band" id="research" style="--accent:var(--sage); background:var(--sage-tint)">
+  <div class="wrap">
+    <h2><span lang="en">Research</span><span lang="fr">Recherche</span></h2>
+    <div id="research-list"></div>
+  </div>
+</section>
+
+<section class="band" id="publications" style="--accent:var(--slate)">
+  <div class="wrap">
+    <h2><span lang="en">Publications &amp; talks</span><span lang="fr">Publications et communications</span></h2>
+    <div>
+      <div id="pubs-block">
+        <div class="sub">Publications</div>
+        <ul class="refs" id="pubs"></ul>
+      </div>
+      <div id="talks-block">
+        <div class="sub"><span lang="en">Presentations</span><span lang="fr">Communications</span></div>
+        <ul class="refs" id="talks"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="teaching" style="--accent:var(--walnut); background:var(--walnut-tint)">
+  <div class="wrap">
+    <h2><span lang="en">Teaching</span><span lang="fr">Enseignement</span></h2>
+    <div class="cards" id="teaching-list"></div>
+  </div>
+</section>
+
+<section class="band" id="cv" style="--accent:var(--rose)">
+  <div class="wrap">
+    <h2><span lang="en">CV &amp; contact</span><span lang="fr">CV et contact</span></h2>
+    <div>
+      <p id="links"><a href="mailto:hannah.humphreys@hawaii.edu">hannah.humphreys@hawaii.edu</a></p>
+      <a class="btn" id="cv-link" href="assets/hannahgrace-humphreys-cv.pdf"><span lang="en">Download CV (PDF)</span><span lang="fr">Télécharger le CV (PDF)</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="wave"></div>
+<footer><div class="wrap"><span>© <span id="year">2026</span> <span data-fill="name">Hannah Grace Humphreys</span></span><span>Mānoa, Hawaiʻi</span></div></footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
