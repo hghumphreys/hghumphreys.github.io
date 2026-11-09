@@ -8,3 +8,6 @@
 # Design history: kept locally, not published to the (public) repo
 mockups/
 screenshots/
+
+# Project notes: kept locally, not in the public repo
+README.md
