@@ -103,6 +103,12 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 
 /* ---------- rich text from the CMS (arrives as HTML with <p> tags) ---------- */
 .rich p:last-child { margin-bottom: 0; }
+/* Headings typed into the CMS editor (or pasted in from a document) display as ordinary
+   paragraphs, so a stray heading style can't make body text big and bold. */
+.rich h1, .rich h2, .rich h3, .rich h4, .rich h5, .rich h6 {
+  font: inherit; color: inherit; margin: 0 0 14px; max-width: 680px;
+}
+.rich p:empty, .rich p:has(> br:only-child) { display: none; }  /* blank lines the editor leaves behind */
 .refs li p { margin: 0; display: inline; }
 .project + .project { margin-top: 32px; }
 .hidden { display: none !important; }

@@ -15,10 +15,17 @@
 
   // Returns one element for each language. When French is empty or identical, a single
   // element without a lang attribute is returned so it shows in both modes.
+  // The CMS editor saves an "empty" rich-text box as "<p></p>" or "<p><br></p>", so a field
+  // counts as blank when it has no visible text once tags and &nbsp; are stripped.
+  function blank(s) {
+    return !(s || "").replace(/<[^>]*>/g, "").replace(/&nbsp;|\u00a0/g, " ").trim();
+  }
+  function clean(s) { return blank(s) ? "" : (s || "").trim(); }
+
   function bi(field, tag, html, cls) {
     field = field || {};
-    var en = (field.en || "").trim();
-    var fr = (field.fr || "").trim() || en;
+    var en = clean(field.en);
+    var fr = clean(field.fr) || en;
     var make = function (text, lang) {
       var el = document.createElement(tag || "span");
       if (lang) el.setAttribute("lang", lang);
@@ -38,7 +45,7 @@
     if (link) link.classList.add("hidden");
   }
 
-  function hasText(field) { return field && (field.en || field.fr); }
+  function hasText(field) { return field && !(blank(field.en) && blank(field.fr)); }
 
   /* ---------- render ---------- */
 
