@@ -27,22 +27,7 @@
     "en": "<p>My research focuses on language documentation and conservation across Oceania, specifically the Marquesas Islands of French Polynesia. Some of my current projects are interested in spatial and temporal constructions in 'Eo 'Enana and languaging practices surrounding breadfruit across the Pacific. In all of my endeavors, I center a biocultural approach to understanding the rich, plural connection between people, language, and place.</p><p>Likewise, I’m curious about regional Language Policy and Planning efforts to combat language loss, with special attention paid to how communities negotiate competing interests on the axes of tradition and modernity towards cultural conservation.</p><p>I'm currently the research assistant on the Bloomberg and Packard joint funded project: Mapping Indigenous Seas led by Co-PI's Dr. Tamatoa Bambridge, Dr. Paul D'Arcy, and Dr. Alexander Mawyer. Feel free to contact me to learn more about how we're approaching the systematic undercount of all the embodiments of indigenous entanglements with the ocean, and how to make these efforts legible to international conservation efforts.</p><p>In 2025, I received my Bachelors Degree from Swarthmore College with a double major in Linguistics &amp; Modern languages (Concentrations in French and Spanish), and Global Politics and Policies. Can you believe they fit <em>all that</em> on a diploma?</p><p>When I'm not investigating the language-culture nexus, you can catch me enjoying the Twilight franchise, early 2000's garage rock, sailing, beach volleyball, and New York Times mini games.</p>",
     "fr": "<p></p>"
   },
-  "research": [
-    {
-      "title": {
-        "en": "Marquesan fieldwork",
-        "fr": "Terrain sur le marquisien"
-      },
-      "details": {
-        "en": "Nuku Hiva, Marquesas Islands · with the Académie marquisienne",
-        "fr": "Nuku Hiva, îles Marquises · avec l’Académie marquisienne"
-      },
-      "description": {
-        "en": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>",
-        "fr": "<p></p>"
-      }
-    }
-  ],
+  "research": [],
   "teaching": [
     {
       "course": {
@@ -64,5 +49,5 @@
     }
   ],
   "email": "hannah.humphreys@hawaii.edu",
-  "cv": "assets/hannahgrace-humphreys-cv.pdf"
+  "cv": ""
 }

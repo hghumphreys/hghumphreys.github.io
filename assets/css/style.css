@@ -113,3 +113,4 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 .project + .project { margin-top: 32px; }
 .hidden { display: none !important; }
 .notice { padding: 16px; text-align: center; color: var(--muted); }
+.about-email { margin-top: 22px !important; font-weight: 500; }

@@ -86,8 +86,18 @@
       tags.appendChild(tag);
     });
 
-    // About
+    // About, with her email right underneath so visitors see it without scrolling to the end
     append($("about-text"), bi(c.about, "div", true));
+    if (c.email) {
+      var line = document.createElement("p");
+      line.className = "about-email";
+      append(line, bi({ en: "Email:", fr: "Courriel :" }));
+      line.appendChild(document.createTextNode(" "));
+      var mail = document.createElement("a");
+      mail.href = "mailto:" + c.email; mail.textContent = c.email;
+      line.appendChild(mail);
+      $("about-text").appendChild(line);
+    }
 
     // Research projects
     var research = (c.research || []).filter(function (r) { return hasText(r.title); });
@@ -142,10 +152,12 @@
       links.appendChild(a);
     });
 
-    // CV
+    // CV & contact: with no CV and no profile links, the section would only repeat the email
+    // already shown under the bio, so it is hidden (with its menu link) until a CV is added.
     var cv = $("cv-link");
     if (c.cv) { cv.href = asset(c.cv); cv.target = "_blank"; cv.rel = "noopener"; }
     else cv.classList.add("hidden");
+    if (!c.cv && items.length <= 1) hideSection("cv");
   }
 
   /* ---------- language toggle (same pattern as andrewlkline.github.io) ---------- */
